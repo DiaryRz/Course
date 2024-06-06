@@ -1,0 +1,30 @@
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<div class="graph" style="width: 40rem; "><canvas id="camembert-chart"></canvas></div>
+
+
+<script>
+    var ctx = document.getElementById('camembert-chart').getContext('2d');
+
+    var data = {
+        labels: <?php echo json_encode($label); ?>,
+        datasets: [{
+            data: <?php echo json_encode($data); ?>,
+            borderWidth: 1
+        }]
+    };
+
+    var options = {
+        title: {
+            display: true,
+            text: 'Exemple de Camembert avec Chart.js'
+        }
+    };
+
+    var myPieChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options
+    });
+</script>

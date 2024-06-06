@@ -1,0 +1,122 @@
+
+<!-- <p>Equipe <?php echo $informations->nomequipe  ?> </p>
+<p>Coureur :  <?php echo $informations->nomcoureur ?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        .certificate {
+            border: 1px solid #ccc;
+            padding: 40px;
+            width: 1000px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            position: relative;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+        .title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            margin: 10px 0;
+        }
+        .subtitle {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .recipient {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+        .details {
+            font-size: 18px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .signatures div {
+            text-align: center;
+            font-size: 18px;
+            width: 200px;
+        }
+        .signatures img {
+            width: 150px;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .date-signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .date-signature div {
+            text-align: center;
+            font-size: 18px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <div class="header">
+            <img src="path/to/logo.png" alt="Logo">
+            Certificate
+        </div>
+        <div class="subtitle">THIS CERTIFICATE THAT</div>
+        <div class="recipient">NAME&SURNAME</div>
+        <div class="details">
+            THE CERTIFICATE COMPLETION OF THE COURSE<br>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum in sagittis erat. Nam semper, risus vitae viverra porta consectetur adipiscing elit. Vestibulum in sagittis erat. Nam semper, risus vitae viverra porta consectetur adipiscing elit. Vestibulum in sagittis erat. Nam semper, risus vitae viverra.
+        </div>
+        <div class="logo">
+            <img src="path/to/seal.png" alt="Seal">
+        </div>
+        <div class="date-signature">
+            <div>
+                DATE
+                <div>________________</div>
+            </div>
+            <div>
+                SIGNATURE
+                <div>________________</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
